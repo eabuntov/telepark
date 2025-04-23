@@ -1,0 +1,16 @@
+{
+    "token": "7905658499:AAG0LqBpboNqvGOSCgluoh3gQn2FYb_RTjA",
+    "authorized_users": [
+      123456789, 
+      987654321, 
+      111222333, 
+      444555666
+    ],
+    "parking_places": ["79", "80"],
+    "data_file": "parking_data.json",
+    "logging": {
+      "log_file": "bot_activity.log",
+      "log_level": "INFO"
+    }
+  }
+  
