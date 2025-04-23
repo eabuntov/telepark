@@ -10,6 +10,8 @@ from telegram.ext import (
     ConversationHandler
 )
 
+from helpers import cancel_booking, cancel_reservation, check_status, confirm_booking, select_date, select_spot, select_time, view_reservations
+
 # States for conversation handler
 SELECTING_SPOT, SELECTING_DATE, SELECTING_TIME, CONFIRMING = range(4)
 
@@ -130,7 +132,6 @@ def main():
     application.add_handler(CommandHandler("help", start))
     application.add_handler(CommandHandler("view", view_reservations))
     application.add_handler(CommandHandler("status", check_status))
-    application.add_handler(CommandHandler("stats", show_stats))
     application.add_handler(CommandHandler("cancel", cancel_reservation))
 
     # Start the Bot
